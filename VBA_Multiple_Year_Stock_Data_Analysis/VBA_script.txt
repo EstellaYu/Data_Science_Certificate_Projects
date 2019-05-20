@@ -1,0 +1,109 @@
+Option Explicit
+
+Sub ticker_yearly_change_analysis()
+
+Dim ws As Worksheet
+Dim last_row, i As Long
+Dim total_vol, open_prc, close_prc, percent_chg, yr_chg As Double
+Dim ticker_cnt, per_inc_ticker_cnt, per_dec_ticker_cnt, total_vol_ticker_cnt As Integer
+Dim open_prc_0 As Boolean
+
+For Each ws In Worksheets
+
+    last_row = ws.Cells(Rows.Count, 1).End(xlUp).Row
+
+    ws.Range("I1, P1") = "Ticker"
+    ws.Range("J1") = "Yearly Change"
+    ws.Range("K1") = "Percent Change"
+    ws.Range("L1") = "Total Stock Volumn"
+    ws.Range("Q1") = "Value"
+    ws.Range("O2") = "Greatest % Incease"
+    ws.Range("O3") = "Greatest % Decrease"
+    ws.Range("O4") = "Greatest Total Volume"
+    
+    ticker_cnt = 2
+    open_prc = ws.Cells(2, 3)
+    If open_prc = 0 Then
+        open_prc_0 = True
+    Else
+        open_prc_0 = False
+    End If
+
+    For i = 2 To last_row
+        total_vol = total_vol + ws.Cells(i, 7)
+        
+        If ws.Cells(i, 1) <> ws.Cells(i + 1, 1) Then
+            ws.Range("I" & ticker_cnt) = ws.Cells(i, 1)
+            
+            ' total volume count
+            ws.Range("L" & ticker_cnt) = total_vol
+            total_vol = 0
+            
+            ' yearly change
+            ' 1. previous stock
+            close_prc = ws.Cells(i, 6)
+            yr_chg = close_prc - open_prc
+            ws.Range("J" & ticker_cnt) = yr_chg
+            
+            If yr_chg = 0 Then
+                percent_chg = 0 ' avoid overflow
+                ws.Range("J" & ticker_cnt).Interior.ColorIndex = 6
+            Else
+                percent_chg = yr_chg / open_prc
+                If yr_chg > 0 Then ' fill cell color based on yearly change
+                    ws.Range("J" & ticker_cnt).Interior.ColorIndex = 4
+                Else
+                    ws.Range("J" & ticker_cnt).Interior.ColorIndex = 3
+                End If
+                
+            End If
+            
+            ws.Range("K" & ticker_cnt) = Format(percent_chg, "#.00%")
+            
+            ' greatest change
+            If ticker_cnt = 2 Then
+                per_inc_ticker_cnt = 2
+                per_dec_ticker_cnt = 2
+                total_vol_ticker_cnt = 2
+            Else
+                If (ws.Range("K" & ticker_cnt) > ws.Range("K" & per_inc_ticker_cnt)) Then
+                    per_inc_ticker_cnt = ticker_cnt
+                ElseIf (ws.Range("K" & ticker_cnt) < ws.Range("K" & per_dec_ticker_cnt)) Then
+                    per_dec_ticker_cnt = ticker_cnt
+                ElseIf (ws.Range("L" & ticker_cnt) > ws.Range("L" & total_vol_ticker_cnt)) Then
+                    total_vol_ticker_cnt = ticker_cnt
+                End If
+            End If
+            
+            ' 2. new stock
+            open_prc = ws.Cells(i + 1, 3)
+            If open_prc = 0 Then
+                open_prc_0 = True
+            Else
+                open_prc_0 = False
+            End If
+            
+            ' 3. increment counter for next stock
+            ticker_cnt = ticker_cnt + 1
+        Else
+            ' open price is 0 for that year (IPO in the middle of the year),
+            ' find non-zero open price
+            If open_prc_0 = True And ws.Cells(i + 1, 3) <> 0 Then
+                open_prc = ws.Cells(i + 1, 3)
+                open_prc_0 = False
+            End If
+        End If
+        
+    Next i
+    
+    ws.Range("P2") = ws.Range("I" & per_inc_ticker_cnt)
+    ws.Range("Q2") = Format(ws.Range("K" & per_inc_ticker_cnt), "#.00%")
+    ws.Range("P3") = ws.Range("I" & per_dec_ticker_cnt)
+    ws.Range("Q3") = Format(ws.Range("K" & per_dec_ticker_cnt), "#.00%")
+    ws.Range("P4") = ws.Range("I" & total_vol_ticker_cnt)
+    ws.Range("Q4") = ws.Range("L" & total_vol_ticker_cnt)
+    ws.Columns("I:Q").AutoFit
+    
+Next ws
+
+End Sub
