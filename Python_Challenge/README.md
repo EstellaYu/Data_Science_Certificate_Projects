@@ -1,4 +1,4 @@
-VBA/Macro analysis on multiple years (2014 - 2016) stocks data
+Python data analysis (PyBank: analysis on monthly Profit/Loss data; PyPoll: analysis on election result)
 
 ### Description of Raw Data
 
