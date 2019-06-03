@@ -1,0 +1,1 @@
+in this work, we will use python to analyze the financial record for a company
