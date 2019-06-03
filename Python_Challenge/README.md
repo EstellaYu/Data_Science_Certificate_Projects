@@ -11,7 +11,7 @@ Python data analysis
  ### Analysis done in this work
 
  #### PyBank
- 
+
   * The total number of months included in the dataset
 
   * The net total amount of "Profit/Losses" over the entire period
@@ -23,13 +23,16 @@ Python data analysis
   * The greatest decrease in losses (date and amount) over the entire period
 
  #### PyPoll
-  - sum up the annual stock volume 
-  - calcualte the annual price difference
-  - calcualte the annual percentaage price change
-  - tabulate resuls in a summary table next to the raw data 
-  - lable the cell with annual price difference with different fill color
-  		- green if net price is positive
-  		- red if net price is negative 
+ 
+  * The total number of votes cast
+
+  * A complete list of candidates who received votes
+
+  * The percentage of votes each candidate won
+
+  * The total number of votes each candidate won
+
+  * The winner of the election based on popular vote.
 
 ### Result for both analysis
 * [PyBank Result](PyBank/summary.txt)
