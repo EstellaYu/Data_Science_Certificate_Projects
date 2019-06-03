@@ -3,7 +3,7 @@ Python data analysis (PyBank: analysis on monthly Profit/Loss data; PyPoll: anal
 ### Description of Raw Data
 
 * [PyBank data file](PyBank/Resources/budget_data.csv) - monthly Profit/Loss data
-* [PyPoll data file](election_data.csv) - contains real stock data for years 2014, 2015 and 2016
+* [PyPoll data file](PyPoll/Resources/election_data.csv) - contains real stock data for years 2014, 2015 and 2016
 
   - The each worksheet contains the stocks data for 1 year (2014, 2015 or 2016)
   - ~3,000 stocks are contained in each worksheet (depending on each year)
