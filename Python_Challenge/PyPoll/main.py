@@ -9,7 +9,7 @@ with open(path, newline = "") as csv_object:
     header = next(csv_object).rstrip("\r\n").split(",")
     rows = csv.reader(csv_object, delimiter = ",")
     
-    vote_cnt = {}
+    vote_cnt = {} # initiate dictionary
     total_cnt = 0
 
     # store result in dictionay
