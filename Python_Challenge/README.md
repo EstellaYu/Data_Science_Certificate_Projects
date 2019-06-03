@@ -22,7 +22,7 @@ Python data analysis
 
   * The greatest decrease in losses (date and amount) over the entire period
 
- #### PyPoll [38,000,000+ data points]
+ #### PyPoll            [38,000,000+ data points]
  
   * The total number of votes cast
 
