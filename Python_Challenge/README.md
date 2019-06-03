@@ -10,7 +10,7 @@ Python data analysis
 
  ### Analysis done in this work
 
- #### PyBank
+ #### PyBank 
 
   * The total number of months included in the dataset
 
@@ -22,7 +22,7 @@ Python data analysis
 
   * The greatest decrease in losses (date and amount) over the entire period
 
- #### PyPoll
+ #### PyPoll [38,000,000+ data points]
  
   * The total number of votes cast
 
