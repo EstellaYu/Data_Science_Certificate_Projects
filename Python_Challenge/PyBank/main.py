@@ -20,13 +20,9 @@ with open(path, newline = "") as csv_file:
             months.append(row[0])
 
         if first: 
-            increase_mon = row[0]
-            decrease_mon = row[0]
-            increase_val = int(row[1])
-            decrease_val = int(row[1])
-            prev_val = int(row[1])
-            change = int(row[1])
-            net_change_0 = int(row[1])
+            increase_mon = decrease_mon = row[0]
+            increase_val = decrease_val = int(row[1])
+            prev_val = change = net_change_0 = int(row[1])
             first = False
         else: 
             change = int(row[1]) - prev_val
@@ -39,9 +35,9 @@ with open(path, newline = "") as csv_file:
                 decrease_mon = row[0]
                 decrease_val = change
         
-
         net_total += int(row[1]) 
-        net_change = int(row[1]) - net_change_0
+    
+    net_change = int(row[1]) - net_change_0
 
     print_str =  """
     Financial Analysis
@@ -51,7 +47,9 @@ with open(path, newline = "") as csv_file:
     Average Change: ${:.2f}
     Greatest Increase in Profits: {} (${})
     Greatest Increase in Profits: {} (${})
-    """.format(len(months), net_total, net_change/(len(months) -1),
+    """.format(len(months), 
+                net_total, 
+                net_change/(len(months) -1),
                 increase_mon, increase_val,
                 decrease_mon, decrease_val)
 
