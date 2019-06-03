@@ -1,5 +1,6 @@
-Python data analysis (PyPoll: analysis of a voting data set) 
-[38,000,000+ data points]
+### Python data analysis 
+##### (PyPoll: analysis of a voting data set) 
+##### [38,000,000+ data points]
 
 - The dataset is composed of three columns: `Voter ID`, `County` and `Candidate`.
 
@@ -15,4 +16,4 @@ Python data analysis (PyPoll: analysis of a voting data set)
 
   * The winner of the election based on popular vote.
 
--The script will print result in a tabulate both in the screen and in a file called "summary.txt"
+-The script will print result in a tabulate both in the __*screen__ and in a __*file__ called `summary.txt`
