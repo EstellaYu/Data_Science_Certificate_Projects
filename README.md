@@ -13,7 +13,7 @@ Homework and Project works, working towards a certificate
     1) [Profit/Loss analysis on Banking data](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_Challenge/PyBank)
         * determine timestamps (in months) for the data provided
         * obtain monthly average Profit/Loss, output the month with `greatest profit` and `biggest loss`
-    2) [Voting Counting analysis](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_Challenge/PyPoll)  
+    2) [Voting Count analysis](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_Challenge/PyPoll)  
         * analyze voting results of size `38,000,000+`
         * obtain available `candidate list`, `voting counts` for each candidate, and `output overall winners` 
     
