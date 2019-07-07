@@ -8,7 +8,7 @@ Homework and Project works, working towards a certificate
     * `Conditional formatting` results, and output `top performers` and `worst performers` across multiple criteria.
 
 ## Python and Jupyter Notebook
-| Python | Pandas | Matplotlib | 
+| Python | Pandas | Matplotlib | API | 
 1. [**Python** Script](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_Challenge) :  
     1) [Profit/Loss analysis on Banking data](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_Challenge/PyBank)
         * determine timestamps (in months) for the data provided
