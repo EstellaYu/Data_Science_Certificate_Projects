@@ -18,7 +18,6 @@ Homework and Project works, working towards a certificate
         * obtain available `candidate list`, `voting counts` for each candidate, and `output overall winners` 
     
     
-  
 2. [**Pandas** Data Wrangling](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Pandas_Data_Wrangling)
     1)  [Game Sales Analysis](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Pandas_Data_Wrangling/Game_Sale_Analysis)  
         * analyze the sale of a digial game, obtain player stats, including palyers' gender and age
@@ -29,13 +28,17 @@ Homework and Project works, working towards a certificate
 
 
 3. [**Matplotlib** Data Visualization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Matplotlib_Visualization): 
-    1)  [Car Share data visualization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Matplotlib_Visualization/Pyber)  
-    finanacial benefit comparison across multi-regional data
+    1)  [Car Rides data visualization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Matplotlib_Visualization/Pyber)  
+         * visulize relationship between `number of rides` in each city, and `cost of rides`
+         * analyze car rides data based on `city type`, `driver numbers`, `ride cost`, ect.
+         
     
     2)  [Clinical trial results analysis](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Matplotlib_Visualization/Pymaceuticals)  
-    different drug effects on mice's tumor size, including survival rate, 
+         * analyze `drug effects` on **mice's tumor size** across the `clinital trials` of `9 different drugs`
+         * obtain `drug performance` based on `survival rate`, `Metastatic spread`, and `tumor size response over time`
     
     
 4. [**API** requests with Python](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_API)
-    * [Weather variation across differnt latitudes](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_API)  
-    use `CityPy` and `OpenWeatherMap` API, obtain local weather for **500+** cities worldwide, analyze weather variation acorss differnt latitude, including `temperature`, `humidity`, `cloudiness`, and `wind speed`
+    1)  [Weather variation across differnt latitudes](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_API)  
+         * use `CityPy` and `OpenWeatherMap` API, randomly obtain local weather for **500+** cities worldwide
+         * analyze weather variation acorss differnt **latitude**, including `temperature`, `humidity`, `cloudiness`, and `wind speed`
