@@ -1,5 +1,13 @@
 # Data Science Certificate Projects
 Homework and Project works, working towards a certificate  
+* [**VBA & Excel**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#vba--excel)  
+| Pivot Table | VBA Macro |  
+
+* [**Python and Jupyter Notebook**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#python-and-jupyter-notebook)  
+| Python | Pandas | Matplotlib | API |  
+
+* [**SQL**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#sql)  
+| SQL script | SQLAlchemy |
 
 ## VBA & Excel
 | Pivot Table | VBA Macro |
@@ -42,3 +50,10 @@ Homework and Project works, working towards a certificate
     1)  [Weather variation across differnt latitudes](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Python_API)  
          * use `CityPy` and `OpenWeatherMap` API, randomly obtain local weather for **500+** cities worldwide
          * analyze weather variation acorss differnt **latitude**, including `temperature`, `humidity`, `cloudiness`, and `wind speed`
+
+## SQL
+| SQL script | SQLAlchemy |
+1. [**SQL** Script](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/SQL) :  
+   * Analyze `employment, title, and salary data` from a coporate from 1980s to 1990s, with `~30k` employee records.
+   * **Design** Database structure, **create** SQL _tables_, **customized query** through different tables
+   * **Visualize** and analyze data in `SQLAlchemy`
