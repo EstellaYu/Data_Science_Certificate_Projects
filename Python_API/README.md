@@ -17,8 +17,20 @@ In this report, you'll see a Python script to visualize the weather of 500+ citi
 
 A series of scatter plots are generated to showcase the following relationships:
 
-* Temperature (F) vs. Latitude
-* Humidity (%) vs. Latitude
-* Cloudiness (%) vs. Latitude
-* Wind Speed (mph) vs. Latitude
+* Temperature (F) vs. Latitude  
+
+![temp](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Python_API/output_data/max_temp.png 'temp')
+
+* Humidity (%) vs. Latitude  
+
+![humidity](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Python_API/output_data/humidity.png 'humidity')
+
+* Cloudiness (%) vs. Latitude  
+
+![cloudiness](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Python_API/output_data/cloudiness.png 'cloudiness')
+
+* Wind Speed (mph) vs. Latitude  
+
+![wind](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Python_API/output_data/wind_speed.png 'wind')
+
 
