@@ -5,11 +5,7 @@
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 # Modify this code to update the DB schema diagram.\
-# To reset the sample schema, replace everything with\
-# two dots ('..' - without quotes).\
-\
-employees as emp\
+\f0\fs24 \cf0 employees as emp\
 -\
 emp_no PK int\
 birth_date date\
@@ -19,6 +15,12 @@ gender char(1)\
 hire_date date \
 \
 \
+departments as dept\
+----\
+dept_no PK int\
+dept_name varchar(30)\
+\
+\
 titles\
 -----------\
 emp_no int FK >- emp.emp_no\
@@ -26,10 +28,6 @@ title varchar(200)\
 from_date date \
 to_date date\
 \
-departments as dept\
-----\
-dept_no PK int\
-dept_name varchar(30)\
 \
 dept_manager as dp_m\
 ------------\
@@ -38,6 +36,7 @@ emp_no int FK >- emp.emp_no\
 from_date date\
 to_date date\
 \
+\
 dept_emp as dp_e\
 ----\
 emp_no int FK >- emp.emp_no\
@@ -45,10 +44,12 @@ dept_no int FK >- dept.dept_no\
 from_date date\
 to_date date\
 \
+\
 salaries\
 -----------------\
-emp_no PK int FK >- emp.emp_no\
+emp_no PK int FK - emp.emp_no\
 salary money\
 from_date date\
 to_date date\
+\
 }
