@@ -31,25 +31,32 @@
 -- NOTE: for employees with different positions, choose the last to_date in dept_e
 	SELECT dept.dept_no, dept.dept_name, 
 		   dept_m.emp_no, emp.last_name, emp.first_name,
-		   emp.hire_date as "Start Employment Date",
-		   end_T.end_employment_date as "End Employment Date"
-	FROM (((dept_m
+		   dept_m.from_date as "Start Employment Date",
+		   dept_m.to_date as "End Employment Date"
+	FROM ((dept_m
 	INNER JOIN dept ON dept.dept_no = dept_m.dept_no)
-	INNER JOIN employee as emp ON emp.emp_no = dept_m.emp_no)
-	INNER JOIN 
-		(SELECT emp_no, MAX(to_date) as end_employment_date
-		 FROM dept_e
-		 GROUP BY emp_no) end_T 
-		 ON end_T.emp_no = dept_m.emp_no);
+	INNER JOIN employee as emp ON emp.emp_no = dept_m.emp_no);
 
 -- 4. List the department of each employee with the following information: 
 -- employee number, last name, first name, and department name.
+-- 1) with all record of possible repeated departments history
 	SELECT dept_e.emp_no, emp.last_name, emp.first_name,
 		   dept.dept_name
 	FROM ((dept_e
 	INNER JOIN employee as emp ON emp.emp_no = dept_e.emp_no)
 	INNER JOIN dept ON dept.dept_no = dept_e.dept_no)
 	ORDER BY emp_no;
+-- 2) with only the most up-to-date department info for each employee	
+	SELECT dept_e.emp_no, emp.last_name, emp.first_name, dept.dept_name
+	FROM (((dept_e
+		INNER JOIN 
+				(SELECT emp_no, MAX(to_date) as lastest_to_date FROM dept_e
+				GROUP BY emp_no) dept_e_up_to_date
+			ON dept_e.to_date = dept_e_up_to_date.lastest_to_date
+			AND dept_e.emp_no = dept_e_up_to_date.emp_no)
+		INNER JOIN employee AS emp ON emp.emp_no = dept_e.emp_no)
+		INNER JOIN dept ON dept.dept_no = dept_e.dept_no)
+	ORDER BY dept_e.emp_no;
 
 -- 5. List all employees whose first name is "Hercules" and 
 -- last names begin with "B."
