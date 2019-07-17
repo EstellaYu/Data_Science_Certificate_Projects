@@ -24,28 +24,30 @@ The following ERD of the tables are obtained from [QuickDatabaseDiagrams.com](ht
 ### Data Analysis
 -- For clearity, only the first 10 rows are shown for most of the query results
 
-1. List the following details of each employee: employee number, last name, first name, gender, and salary.
+1. List the following details of `each employee`: employee number, last name, first name, gender, and salary.  
 ![employee](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/1_employee_detail_and_salary.png 'employee')
 
-2. List employees who were hired in 1986.
+2. List employees who were `hired in 1986`.  
 ![employee1986](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/2_employee_hired_in_1986.png 'employee1986')
 
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
+3. List the `manager of each department` with the following information:   
+department number, department name, the manager's employee number, last name, first name, and start and end employment dates.  
 ![3](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/3_managers_in_each_department.png '3')
 
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+4. List the `department of each employee` with the following information: employee number, last name, first name, and department name.  
+-- Data filtered and only the most recent department is shown in this query  
 ![4](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/4_employee_and_departments.png '4')
 
-5. List all employees whose first name is "Hercules" and last names begin with "B."
+5. List all employees whose `first name is "Hercules" and last names begin with "B."`
 ![5](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/5_employee_named_Herculus_B.png '5')
 
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+6. List all employees in the `Sales department`, including their employee number, last name, first name, and department name.
 ![6](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/6_employee_in_Sales.png '6')
 
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+7. List all employees in the `Sales and Development departments`, including their employee number, last name, first name, and department name.
 ![7](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/7_employee_in_Sales_and_Development.png '7')
 
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+8. In descending order, list the `frequency count of employee last names`, i.e., how many employees share each last name.
 ![8](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/8_employee_last_name_frequency.png '8')
 
 ## Visualization in SQLAlchemy
@@ -53,4 +55,9 @@ The following ERD of the tables are obtained from [QuickDatabaseDiagrams.com](ht
 While the data, a creeping suspicion came up that the dataset is fake. To confirm your hunch, **`SQLAlchemy`** is used to import the database in Jupyter Notebook in order to generate a visualization of the data...
 
 Here is a bar chart of average salary by title.
+
+For example, how can the entry salary for `Engineer`, `Associate Engineer`, and  `Senior Engineer` be so close? This must be a made up data-file! Good job for creating such big files though..
+
+
 ![bar](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/average_salary_entry_titles.png 'bar')
+
