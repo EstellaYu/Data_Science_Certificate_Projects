@@ -105,7 +105,7 @@ Now that we have completed your initial analysis, let's design a Flask API based
 
   * Use the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
 
-    ![temperature](Result/daily_temperature_during_trip.png)
+    ![temperature](Result/trip_temp.png)
 
 ### Daily Rainfall Average
 
@@ -121,5 +121,5 @@ Now that we have completed your initial analysis, let's design a Flask API based
 
 * Use Pandas to plot an area plot (`stacked=False`) for the daily normals.
 
-  ![daily-normals](Result/temperature_frequency.png)
+  ![daily-normals](Result/daily_temperature_during_trip.png)
 
