@@ -6,17 +6,15 @@ Congratulations! Let's say you've decided to treat yourself to a long holiday va
 
 Python, Matplotlib and SQLAlchemy are used for data exploration.
 
-* Database: [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
+* Database: [hawaii.sqlite](Resources/hawaii.sqlite) .
 
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
+* Use SQLAlchemy to connect to your sqlite database.
 
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
+* Reflect tables into classes and save a reference to those classes. Inspect column detail in each table
 
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
+## 2 - Past Precipitation Analysis
 
-### Precipitation Analysis
-
-* Design a query to retrieve the last 12 months of precipitation data.
+* Retrieve the last 12 months of precipitation data.
 
 * Select only the `date` and `prcp` values.
 
@@ -24,9 +22,8 @@ Python, Matplotlib and SQLAlchemy are used for data exploration.
 
 * Sort the DataFrame values by `date`.
 
-* Plot the results using the DataFrame `plot` method.
 
-  ![precipitation](Images/precipitation.png)
+  ![precipitation](Results/precipitation.png)
 
 * Use Pandas to print the summary statistics for the precipitation data.
 
