@@ -1,0 +1,31 @@
+body {
+    background-color: gainsboro
+}
+
+h1,h2,h3,h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-weight: 800;
+    color: darkcyan;
+}
+
+.page-footer {
+    background-color: gray;
+    border-top: 10px solid darkcyan;
+    margin-top: 50px;
+}
+.bg-custom {
+    background-color: white !important
+}
+
+@media (max-width: 575px) {
+    .bg-custom {
+        background-color: darkcyan !important
+    }
+}
+
