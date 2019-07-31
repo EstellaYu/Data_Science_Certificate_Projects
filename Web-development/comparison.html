@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather Data Visualization">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Estella Yu -- estellayyu@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP DEPENDENCIES -->
+    <link href="Resources/Style/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Resources/Style/style.css" rel="stylesheet" type="text/css">
+
+    <!--JAVASCRIPTS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Resources/Style/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-sm font-light navbar-light bg-custom fixed-top"> 
+         <!-- NAVBRAND -->   
+        <a href="index.html">
+            <div class="navbar navbar-brand mr-auto">
+                    <h2 style="color: white"> 
+                        <strong>Lattitude</strong>
+                    </h2>
+            </div>        
+        </a>
+         
+        <!-- NAV-ITEMS -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto" style="background-color: white">
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop" 
+                    aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
+
+                <!-- OTHER NON-DROPDOWNS -->
+                <li class="navbar nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="navbar nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BODY PANNAL 1 -->
+    <section>
+        <div class="container-fluid" style="padding-left: 4rem; padding-right: 2rem; margin-top: 100px;" >
+            <div class="row">
+                <!-- Pannel: COMPARISON -->
+                <div class="col-md-11 h-50" style="background-color: white; margin-left: 0.5rem">
+                    <h2 class="title">Comparison: Lattitude vs. X</h2>
+                    <hr>
+
+                    <!-- Creating another container -->
+                    <div class="container">
+                        <div class="row">
+                            <p style="margin: 0.5rem">
+                                Click any plot to get an in-depth analysis.
+                            </p>
+                        </div>
+                        <div class="row" style="margin: 1rem; margin-right: 0px">
+                            <div class="col-md-6 col-sm-12 justify-content-center" style="padding-top: 1rem">
+                                <h4 class="title text-center" style="margin-left: -18%">vs. Temperature (F)</h4>
+                                <a href="max_temp.html">
+                                    <img src="Images/img/max_temp.png" alt="cloudiness" style="width: 80%; margin: 0.5rem;">
+                                </a>
+                            </div>  
+                            <div class="col-md-6 col-sm-12 justify-content-center" style="padding-top: 1rem">
+                                <h4 class="title text-center" style="margin-left: -18%">vs. Humidity (%)</h4>
+                                <a href="humidity.html">
+                                    <img src="Images/img/humidity.png" alt="humidity" style="width: 80% ; margin: 0.5rem">
+                                </a>    
+                            </div>
+                            <div class="col-md-6 col-sm-12 justify-content-center" style="padding-top: 1rem">
+                                <h4 class="title text-center" style="margin-left: -18%">vs. Cloudiness (%)</h4>
+                                <a href="cloudiness.html">
+                                    <img src="Images/img/cloudiness.png" alt="cloudiness" style="width: 80%; margin: 0.5rem">
+                                </a>
+                            </div>  
+                            <div class="col-md-6 col-sm-12 justify-content-center" style="padding-top: 1rem">
+                                <h4 class="title text-center" style="margin-left: -18%">vs. Wind Speed (mph)</h4>
+                                <a href="wind_speed.html">
+                                    <img src="Images/img/wind_speed.png" alt="humidity" style="width: 80%; margin: 0.5rem">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER --> <!-- Copyright -->
+    <footer class="page-footer">
+            <div class="container">
+                <div class="row" style="margin-top:1rem; margin-bottom:-2rem">
+                    <div class="col">
+                        <ul class="list-inline text-center">
+                            <!--LINKEDIN-->
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/estella-yu/">
+                                    <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x" style="color: black"></i>
+                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <!--GITHUB-->
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://github.com/EstellaYu/">
+                                        <span class="fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x" style="color: black"></i>
+                                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center py-3" style="color: white">© Copyright 
+                        <a target="_blank" href="https://estellayu.github.io/" style="color: whitesmoke">
+                            <strong>Estella Yu</strong>
+                        </a> 2019
+                </div>
+            </div>
+            
+    </footer>
+</body>
+
+</html>
