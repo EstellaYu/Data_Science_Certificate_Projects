@@ -41,5 +41,3 @@ The website must, at the top of every page, have a navigation menu that:
 
 The website is deployed [here](http://estellayu.github.io).
 
-When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-
