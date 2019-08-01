@@ -9,7 +9,7 @@ Homework and Project works, working towards a certificate
 * [**SQL**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#sql)  
 | SQL script | SQLAlchemy |
 
-* [**Web-Developemnt -- HTML and CSS**]
+* [**Web-Design -- HTML and CSS**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)
 | HTML | CSS | Bootstrap |
 
 ## VBA & Excel
