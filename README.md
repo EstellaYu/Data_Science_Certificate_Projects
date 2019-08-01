@@ -9,6 +9,9 @@ Homework and Project works, working towards a certificate
 * [**SQL**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#sql)  
 | SQL script | SQLAlchemy |
 
+* [**Web-Developemnt -- HTML and CSS**]
+| HTML | CSS | Bootstrap |
+
 ## VBA & Excel
 | Pivot Table | VBA Macro |
 1. [Multiple Years Stock Data Analysis in **VBA**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/VBA_Multiple_Year_Stock_Data_Analysis)  
@@ -57,3 +60,10 @@ Homework and Project works, working towards a certificate
    * Analyze `employment, title, and salary data` from a coporate from 1980s to 1990s, with `~30k` employee records.
    * **Design** Database structure, **create** SQL _tables_, **customized query** through different tables
    * **Visualize** and analyze data in `SQLAlchemy`
+   
+## Web Developement
+| HTML | CSS | Bootstrap |
+1. [**Web** Data Visaulization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-development):
+   * Create web-dashboard for data visulization 
+   * Extract the weather across `500+` cities across the world and plotting various attributes, including `Temprature`, `Windspeed`, `Cloudiness`, `Windspeed` and its relation with `latitude`.
+   * Combine **HTML**, **CSS** and **Bootstrap** for webpage formatting
