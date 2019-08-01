@@ -9,7 +9,7 @@ Homework and Project works, working towards a certificate
 * [**SQL**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#sql)  
 | SQL script | SQLAlchemy |
 
-* [**Web-Design -- HTML and CSS**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)
+* [**Web-Design -- HTML and CSS**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
 | HTML | CSS | Bootstrap |
 
 ## VBA & Excel
@@ -63,7 +63,7 @@ Homework and Project works, working towards a certificate
    
 ## Web Developement
 | HTML | CSS | Bootstrap |
-1. [**Web** Data Visaulization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-development):
+1. [**Web dashboard** Data Visaulization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-development):
    * Create web-dashboard for data visulization 
    * Extract the weather across `500+` cities across the world and plotting various attributes, including `Temprature`, `Windspeed`, `Cloudiness`, `Windspeed` and its relation with `latitude`.
    * Combine **HTML**, **CSS** and **Bootstrap** for webpage formatting
