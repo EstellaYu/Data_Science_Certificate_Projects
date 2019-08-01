@@ -1,4 +1,4 @@
-# Web Visualization Dashboard (Weather worldwide across all Latitude)
+# Web Visualization Dashboard (Weather vs. Latitude)
 
 ## Background
 
