@@ -1,14 +1,13 @@
 # Mission to Mars
 
-![mission_to_mars](Images/mission_to_mars.png)
+![mission_to_mars](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Web-Scraping-and-Document-Databases/templates/Images/image.jpeg)
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
+In this work, a web application is built to scrape various websites for data related to the __`Mission to Mars`__ and displays the information in a single HTML page. The following outlines the detail process.
 
-## Step 1 - Scraping
+## 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
-
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+The initial scraping is performed using `Jupyter Notebook`, `BeautifulSoup`, `Pandas`, and `Splinter`.
+see [`mission_to_mars.ipynb`](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-Scraping-and-Document-Databases/Scraping_notebook) for more detail. 
 
 ### NASA Mars News
 
