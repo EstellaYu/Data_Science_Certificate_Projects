@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission To Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #box {
+      margin: 0.5rem;
+      background-color:rgba(255, 255, 255, 0.5); 
+      box-shadow:silver 1px 1px 10px;
+      border-radius: 2rem;
+    }
+  </style>
+</head>
+
+<body style="background-image: linear-gradient(to bottom right,rgba(255, 0, 0, 0.3),rgba(0,0,139,0.6), rgba(25, 25, 112, 0.9))">
+  <!-- HEADER -->
+  <div class="container">
+    <div class="jumbotron text-center" style="background-image: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/860_main_Marscolony.gif'); 
+                                              background-size: cover; 
+                                              background-repeat: no-repeat;
+                                              background-position: center;">
+      <h1 style="color: white; text-shadow: grey 1px 1px 3px,white 5px 5px 10px">Mission To Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape Data</a></p>
+    </div>
+
+    <!-- Mars News -->
+    <div class="row" id="latest-news">
+      <div class="col-md-12" id="box"> 
+        <h2 class="heading">Latest Mars News</h2>
+        <hr>
+        <a href="{{dict.mars_news.weblink}}">
+          <h4 class="heading">{{dict.mars_news.title}}</h4>
+        </a>
+        <small>{{dict.mars_news.date.date()}}</small>
+        <p>{{dict.mars_news.abstract}}</p>
+      </div>
+    </div>
+
+    <div class="row" id="img-and-info">
+      <!-- Feature Image -->
+      <div class="col-md-7 h100" id="box" style="margin-right: 0; margin-left: 0">
+        <h2 class="heading">Feature Image</h2>
+        <hr>
+        <img src={{dict.featured_image_url}} alt="feature-img" width = 100%>
+        <p>{{dict.mars_news.abstract}}</p>
+      </div>
+
+      <div class="col-md-5 h100" style="margin-left: 0; margin-right: 0">
+        <!-- Weather -->
+        <div class="row" 
+            id="box"
+            style="padding-left: 1rem">
+          <h2 class="heading">Current Weather on Mars</h2>
+          <hr>
+          <p>{{dict.mars_weather}}</p>
+        </div>
+
+        <!-- Mars Fact -->
+        <div class="row" id="box" style="padding: 1rem">
+            <h2 class="heading">Mars Facts</h2>
+            <p style="width: 100%;">{% include "mars_fact.html" %}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Cards for Hemisphere Image -->
+    <div class="row" id="box" style="padding: 2rem" >
+        <h2 class="heading">Mars Hemispheres</h2>
+        <hr>
+        <!-- IMAGE CARD -->
+        {% for url in dict.hemisphere_url %}
+        <div class="card col-md-3" 
+              style=" border: black 1px solid; 
+                      padding: 0.2rem; 
+                      background-color:rgba(255, 255, 255, 0.5)">
+          <img  class="card-img-top"
+                src={{url["img_url"]}} 
+                alt={{url['title']}} width="100%">
+          <div class="card-body text-center" >
+              <div class="card-title" style="padding: 1rem">{{url['title']}}</div>
+              <a href="{{url['img_url']}}"class="btn btn-primary">Full Image</a>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+
+  </div>
+
+      <!-- FOOTER --> <!-- Copyright -->
+      <footer class="page-footer" style="background-color: thistle; margin-top: 2rem">
+          <div class="container">
+              <div class="row" style="margin-top:2rem; margin-bottom:-2rem">
+                  <div class="col">
+                      <ul class="list-inline text-center">
+                          <!--LINKEDIN-->
+                          <li class="list-inline-item">
+                              <a target="_blank" href="https://www.linkedin.com/in/estella-yu/">
+                                  <span class="fa-stack fa-lg">
+                                          <i class="fa fa-circle fa-stack-2x" style="color: black"></i>
+                                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <!--GITHUB-->
+                          <li class="list-inline-item">
+                              <a target="_blank" href="https://github.com/EstellaYu/">
+                                      <span class="fa-stack fa-lg">
+                                              <i class="fa fa-circle fa-stack-2x" style="color: black"></i>
+                                              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                      </span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="text-center py-3" style="color: white; margin: 2rem"><h4>© Copyright
+                      <a target="_blank" href="https://estellayu.github.io/" style="color: whitesmoke">
+                          <strong>Estella Yu</strong>
+                      </a> 2019</h4>
+              </div>
+          </div>
+          
+      </footer>
+</body>
+</html>
+
