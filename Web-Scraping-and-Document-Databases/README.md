@@ -1,8 +1,8 @@
 # Mission to Mars
 
-![mission_to_mars](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Web-Scraping-and-Document-Databases/templates/Images/image.jpeg)
+In this work, a web application is built to scrape various websites for data related to the __`Mission to Mars`__ and displays the information in a single HTML page. The following README file will outline the detail process.
 
-In this work, a web application is built to scrape various websites for data related to the __`Mission to Mars`__ and displays the information in a single HTML page. The following outlines the detail process.
+![mission_to_mars](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Web-Scraping-and-Document-Databases/templates/Images/image.jpeg)
 
 ## 1 - Scraping
 
