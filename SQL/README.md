@@ -1,83 +1,63 @@
-# Employee Database: A Mystery in Two Parts
-
-![sql.png](sql.png)
+# SQL Analysis on Employee Database
 
 ## Background
+Contained in [data](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/SQL/data) is a research project on employees from a corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files
+* `employee.csv`
+* `departments.csv` 
+* `dept_emp.csv`
+* `dept_manager.csv`
+* `titles.csv`
 
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+In the following analysis, the following operations are performed:
+   1) **design tables** to hold the data, 
+   2) **import** the CSVs into a **SQL database**, 
+   3) perform different **SQL queries** to extract insightful information, and 
+   4) import SQL database to jupyter notebook using **SQLAlchemy for visulalization**
+   
+## Analysis
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+### Data Modeling (ERD of tables)
+An `Entity Relationship Diagram` (`ERD`) is a snapshot of data structures. An Entity Relationship Diagram shows entities (tables) in a database and relationships between tables within that database. For a good database design it is essential to have an Entity Relationship Diagram. (QUOTE FROM [datanamic](https://www.datanamic.com/dezign/erdiagramtool.html))  
+The following ERD of the tables are obtained from [QuickDatabaseDiagrams.com](http://www.quickdatabasediagrams.com)
+![ERD](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/ERD.png "ERD")
 
-1. Data Modeling
+### Data Analysis
+-- For clearity, only the first 10 rows are shown for most of the query results
 
-2. Data Engineering
+1. List the following details of `each employee`: employee number, last name, first name, gender, and salary.  
+![employee](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/1_employee_detail_and_salary.png 'employee')
 
-3. Data Analysis
+2. List employees who were `hired in 1986`.  
+![employee1986](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/2_employee_hired_in_1986.png 'employee1986')
 
-## Instructions
+3. List the `manager of each department` with the following information:   
+department number, department name, the manager's employee number, last name, first name, and start and end employment dates.  
+![3](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/3_managers_in_each_department.png '3')
 
-#### Data Modeling
+4. List the `department of each employee` with the following information: employee number, last name, first name, and department name.  
+-- Data filtered and only the most recent department is shown in this query  
+![4](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/4_employee_and_departments.png '4')
 
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+5. List all employees whose `first name is "Hercules" and last names begin with "B."`
+![5](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/5_employee_named_Herculus_B.png '5')
 
-#### Data Engineering
+6. List all employees in the `Sales department`, including their employee number, last name, first name, and department name.
+![6](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/6_employee_in_Sales.png '6')
 
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+7. List all employees in the `Sales and Development departments`, including their employee number, last name, first name, and department name.
+![7](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/7_employee_in_Sales_and_Development.png '7')
 
-* Import each CSV file into the corresponding SQL table.
+8. In descending order, list the `frequency count of employee last names`, i.e., how many employees share each last name.
+![8](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/8_employee_last_name_frequency.png '8')
 
-#### Data Analysis
+## Visualization in SQLAlchemy
 
-Once you have a complete database, do the following:
+While the data, a creeping suspicion came up that the dataset is fake. To confirm your hunch, **`SQLAlchemy`** is used to import the database in Jupyter Notebook in order to generate a visualization of the data...
 
-1. List the following details of each employee: employee number, last name, first name, gender, and salary.
+Here is a bar chart of average salary by title.
 
-2. List employees who were hired in 1986.
+For example, how can the entry salary for `Engineer`, `Associate Engineer`, and  `Senior Engineer` be so close? This must be a made up data-file! Good job for creating such big files though..
 
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+![bar](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/SQL/RESULT/average_salary_entry_titles.png 'bar')
 
-5. List all employees whose first name is "Hercules" and last names begin with "B."
-
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
-
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
-
-## Bonus (Optional)
-
-As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
-
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
-
-   ```sql
-   from sqlalchemy import create_engine
-   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
-   connection = engine.connect()
-   ```
-
-* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
-
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
-
-2. Create a bar chart of average salary by title.
-
-3. You may also include a technical report in markdown format, in which you outline the data engineering steps taken in the homework assignment.
-
-## Epilogue
-
-Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
-
-## Submission
-
-* Create an image file of your ERD.
-
-* Create a `.sql` file of your table schemata.
-
-* Create a `.sql` file of your queries.
-
-* (Optional) Create a Jupyter Notebook of the bonus analysis.
-
-* Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.

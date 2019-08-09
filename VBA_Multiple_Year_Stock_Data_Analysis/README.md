@@ -33,6 +33,11 @@ VBA/Macro analysis on multiple years (2014 - 2016) stocks data
 
 ### Result for the "Difficult" level
 * [2014 result](2014_VBA_Multiple_years_Stocks_Data_Analysis.png)
+![2014 result](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/VBA_Multiple_Year_Stock_Data_Analysis/2014_VBA_Multiple_years_Stocks_Data_Analysis.png '2014')
+
 * [2015 result](2015_VBA_Multiple_years_Stocks_Data_Analysis.png)
+![2015 result](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/VBA_Multiple_Year_Stock_Data_Analysis/2015_VBA_Multiple_years_Stocks_Data_Analysis.png '2015')
+
 * [2016 result](2016_VBA_Multiple_years_Stocks_Data_Analysis.png)
+![2016 result](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/VBA_Multiple_Year_Stock_Data_Analysis/2016_VBA_Multiple_years_Stocks_Data_Analysis.png '2016')
 
