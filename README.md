@@ -10,7 +10,7 @@ Homework and Project works, working towards a certificate
 | SQL script | SQLAlchemy |
 
 * [**Web-Design -- HTML and CSS**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
-| HTML | CSS | Bootstrap |
+| HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb |
 
 ## VBA & Excel
 | Pivot Table | VBA Macro |
@@ -62,8 +62,13 @@ Homework and Project works, working towards a certificate
    * **Visualize** and analyze data in `SQLAlchemy`
    
 ## Web Developement
-| HTML | CSS | Bootstrap |
+| HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb |
 1. [**Web dashboard** Data Visaulization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-development):
    * Create web-dashboard for data visulization 
    * Extract the weather across `500+` cities across the world and plotting various attributes, including `Temprature`, `Windspeed`, `Cloudiness`, `Windspeed` and its relation with `latitude`.
    * Combine **HTML**, **CSS** and **Bootstrap** for webpage formatting
+   
+2. [**Web Scraping** Mission to Mars](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Web-Scraping-and-Document-Databases)
+   * **Web scraping** from 5 different websites, and EXTRACT information related to `Mission to Mars`
+   * TRANSFORM the information into a `dictionary`, and store the input into **MongoDb**
+   * RETRIEVE and LOAD data from database, and use **Flask** to deploy the content in a single HTML file
