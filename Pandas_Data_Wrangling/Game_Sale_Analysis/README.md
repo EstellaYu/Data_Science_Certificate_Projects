@@ -1,4 +1,4 @@
-l# Anlayzing Game sales data
+# Anlayzing Game sales data
 
 ## 1: Heroes of Pymoli
 
