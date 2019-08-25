@@ -40,7 +40,7 @@ In this work, `javascript` code is written to `create a filterable table` which 
 
 - - -
 
-** The website is deployed [here](https://estellayu.github.io/Image/Projects/UFO_Javascript/index.html)**
+**The website is deployed [here](https://estellayu.github.io/Image/Projects/UFO_Javascript/index.html)**
 
 **Have fun exploring UFO data!**
 
