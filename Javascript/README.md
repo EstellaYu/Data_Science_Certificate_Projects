@@ -1,5 +1,6 @@
 # Is UFO Real?
-# `JavaScript` and `DOM Manipulation`
+### `JavaScript` and `DOM Manipulation`
+---
 
 ## Background
 
