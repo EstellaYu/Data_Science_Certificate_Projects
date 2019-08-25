@@ -10,6 +10,8 @@ There is just one tiny problem though... our collection is too large to search t
 
 In this work, `javascript` code is written to `create a filterable table` which is done dynamically based upon a [dataset](static/js/data.js). Users are also available to filter the table data by `multiple criteria`.
 
+![UFO image](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Javascript/static/images/ufo_sights_web.png)
+
 ## The Task
 
 ### 1. Automatic Table and Date Search
@@ -37,6 +39,8 @@ In this work, `javascript` code is written to `create a filterable table` which 
 * [UFO Sightings Data](static/js/data.js)
 
 - - -
+
+** The website is deployed [here](https://estellayu.github.io/Image/Projects/UFO_Javascript/index.html)**
 
 **Have fun exploring UFO data!**
 
