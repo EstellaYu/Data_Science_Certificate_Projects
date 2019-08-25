@@ -9,8 +9,8 @@ Homework and Project works, working towards a certificate
 * [**SQL**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#sql)  
 | SQL script | SQLAlchemy |
 
-* [**Web-Design -- HTML and CSS**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
-| HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb |
+* [**Web-Design -- HTML, CSS and Javascript**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
+| HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb | Javascript
 
 ## VBA & Excel
 | Pivot Table | VBA Macro |
@@ -72,3 +72,7 @@ Homework and Project works, working towards a certificate
    * **Web scraping** from 5 different websites, and EXTRACT information related to `Mission to Mars`
    * TRANSFORM the information into a `dictionary`, and store the input into **MongoDb**
    * RETRIEVE and LOAD data from database, and use **Flask** to deploy the content in a single HTML file
+   
+3. [**Javascript** UFO record -- interactive filter](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Javascript)
+   * Load UFO data from `data.js`
+   * Create interactive filter result by constraining `Datetime`, `Country`, `State`, `City` and `Shape`    
