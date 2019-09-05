@@ -18,3 +18,29 @@ h1:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.page-footer {
+    background-color: whitesmoke;
+    margin-top: 50px;
+    border-top:green;
+  }
+
+.bordertest {
+    height:170px;
+    width:100%;
+    position: absolute;
+}
+.bordertest::before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:10px;
+    background:linear-gradient(to right, green, blue);
+    top:-10px;
+    left:0;
+}
+
+
+.fa-stack:focus, .fa-stack:hover{
+    color:  green
+}
