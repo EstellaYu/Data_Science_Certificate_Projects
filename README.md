@@ -12,7 +12,7 @@ Homework and Project works, working towards a certificate
 * [**Web-Design -- HTML, CSS and Javascript**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
 | HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb | Javascript
 
-* [**Interactive Web Visualization**]((https://github.com/EstellaYu/Data_Science_Certificate_Projects#Interactive-Web-Visualization))  
+* [**Interactive Web Visualization**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#interactive-web-visualization)  
 | Javascript | Plotly.js | D3.js | Flask | Heroku | 
 
 ## VBA & Excel
