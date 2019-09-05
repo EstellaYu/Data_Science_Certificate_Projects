@@ -1,0 +1,20 @@
+
+.jumbotron{
+    content: " ";
+    background-image: url('https://i.pinimg.com/originals/6f/a4/2b/6fa42beacc96a9e23929acf8635064fd.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 48%;
+    opacity: 0.9;
+}
+.jumbotron h1{
+    background: linear-gradient(to right, green,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1:hover{
+    background: linear-gradient(to right, green,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
