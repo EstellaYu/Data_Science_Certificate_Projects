@@ -12,6 +12,9 @@ Homework and Project works, working towards a certificate
 * [**Web-Design -- HTML, CSS and Javascript**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#web-developement)  
 | HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb | Javascript
 
+* [**Interactive Web Visualization**]((https://github.com/EstellaYu/Data_Science_Certificate_Projects#Interactive-Web-Visualization))  
+| Javascript | Plotly.js | D3.js | Flask | Heroku | 
+
 ## VBA & Excel
 | Pivot Table | VBA Macro |
 1. [Multiple Years Stock Data Analysis in **VBA**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/VBA_Multiple_Year_Stock_Data_Analysis)  
@@ -76,3 +79,11 @@ Homework and Project works, working towards a certificate
 3. [**Javascript** UFO record -- interactive filter](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Javascript)
    * Load UFO data from `data.js`
    * Create interactive filter result by constraining `Datetime`, `Country`, `State`, `City` and `Shape`    
+
+## Interactive Web Visualization
+| Flask | Javascript | Plotly.js | D3.js | Heroku
+1. [**Flask, Plotly.js, and Heroku** -- Interactive Web Dashboard](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Interactive-web-Dashboard) :  
+   * Analyze `Belly Button Biodiversity data` from 135 individuals, where over `~3k` microorganisms are identified.
+   * **Create** Interactive Dashboards using `Plotly.js`, including _Pie chart_, _Guage plot_, and _Bubble plot_.
+   * Each selection correspond to the data of a different individual, **retrieve** data from `SQLite database`, **Update** visualization base on use's selection
+   * **Deploy** interactive dashboard on Heroku
