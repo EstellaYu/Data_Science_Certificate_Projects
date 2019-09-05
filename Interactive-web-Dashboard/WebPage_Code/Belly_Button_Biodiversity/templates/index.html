@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flask Plotlyjs Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/clean-blog.css">
+  <link rel="stylesheet" href="../static/css/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity</h1>
+        <h3><br>They might call your belly button <em><strong>HOME</strong></em>. Do you know them yet?</h3>
+        <h3>Use the interactive charts below to explore the dataset.</h3>
+      </div>
+    </div>
+    <div class="row" id="intro">
+          <h1 style="display: inline" >What lives in your belly botton?</h1>
+          <h3 style="display: inline"> -- You will be surprised!</h3>
+          <hr>
+          <p style="display: inline"> 
+            Back in <strong>2010</strong>, a curious undergrad in North Carolina State University had a random idea -- sampling colleague's navel bacteria for a holiday card. 
+            What's better than ones' <strong>belly button</strong> -- as one of the body's most rarely scrubbed crannies, it may offer researchers a chance to study as close to a pristine microbial landscape as is possible on the modern human.
+            <br><br>          
+            The result is just astonishing... 
+            <ul>
+              <li>In the original sample collected from <em><strong>60 individuals, <em>2,368</em> bacteria species are found, <em>1,458</em> of which may be new to science.</strong></em></li>
+              <li>Some belly buttons harbored as few as <em><strong>29 species</strong></em> and some as many as <em><strong>107</strong></em>, although most had around <em><strong>67</strong></em>. </li>
+              <li>92% of the bacteria types showed up on fewer than 10% of subjects — in fact, most of the time, they appeared in only a single subject.</li>
+              <li>One science writer, for instance, apparently harbored a bacterium that had previously been found only in soil from Japan—where he has never been.  </li>
+            </ul>
+            (<em><strong>Welcome to the Jungle!</strong></em>)
+            <br> 
+            Although the data collection for <a href="http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Botton Biodiversity Project</a> has stopped in 2012, data collected from <em><strong>135</strong></em> individuals are available online, and are readily available <em><strong>HERE</strong></em>.
+            <br><br>
+            In addition to inspiring scientific curiosity, Belly Button Biodiversity inspired conversations about the beneficial roles microbes play in our daily lives.
+            <br>
+            Maybe it will enhance the way you appreciate nature and the eco-balance in your body, too. Enjoy!
+            <br><br><br>
+          </p>
+      </div>   
+      <div class="row" id="explore"> 
+          <h1 style="display: inline" >Now it's your turn -- <em><strong> EXPLORE!</strong></em></h1>
+          <hr>
+          <h4>
+            Each sample number offers the data from an individual: <br><br>
+            <ul>
+              <li>
+                <strong>Pie chart:  </strong> 
+                Top 10 micro-organisms and concentration<br><br>
+              </li>
+              <li>
+                <strong>Gauge chart:</strong> 
+                Weekly belly button scrubing frequency<br><br>
+              </li>
+              <li>
+                <strong>Bubble plot:</strong> 
+                All micro-organisms and concentration<br><br>
+              </li>
+            </ul> 
+            Some Jargons -- <strong>OTU</strong> (Operational Taxonomic Unit) | <strong>OTU ID</strong> (micro-organisms' type) | <strong>WFREQ</strong> (washing frequency)
+            <br><br><br><br>
+          </h4>
+      </div>
+    <div class="row fluid">
+        <h1 style="display: inline" >Dashboard</strong></em></h1>
+        <hr><br><br>
+      <div class="col-md-2">
+        <div class="well">
+          <h5>SELECT Sample Number:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Individual's MetaData</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="pie"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge" style="margin-top: 10%"></div>
+      </div>
+      <div class="col-md-12">
+          <div id="bubble"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="page-footer bordertest">
+  <div class="container">
+      <div class="row text-center" style="margin-top:-2rem; margin-bottom:-3rem; margin-left: 20%">
+      
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+          <!--EMAIL-->
+          <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/estella-yu/" data-toggle="tooltip" title="Email">
+              <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+          </li>
+          <!--LINKEDIN-->
+          <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com/in/estella-yu/" data-toggle="tooltip" title="LinedIn">
+              <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+          </li>
+          <!--Github-->
+          <li class="list-inline-item">
+              <a target="_blank" href="https://github.com/EstellaYu" data-toggle="tooltip" title="Github">
+              <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+          </li>
+          </ul>
+          <h4 class="copyright text-muted" style="font-size: 2rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+              <br>&copy; Copyright <strong><a href="http://estellayu.github.io">Estella Yu</a></strong> 2019
+          </h4>
+      </div>
+      </div>
+  </div>
+</footer>
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  
+</body>
+
+</html>
