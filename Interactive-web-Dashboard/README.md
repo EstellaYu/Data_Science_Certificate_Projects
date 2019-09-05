@@ -30,7 +30,7 @@ Use `Plotly.js` to build interactive charts for the dashboard.
 
 ## 2 - Heroku
 
-Deploy the Flask app to Heroku.
+[Deploy the Flask app to Heroku (click to view website)](https://belly-button-biodiversity-ply.herokuapp.com).
 
 
 
