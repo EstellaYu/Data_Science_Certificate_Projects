@@ -86,4 +86,4 @@ Homework and Project works, working towards a certificate
    * Analyze `Belly Button Biodiversity data` from 135 individuals, where over `~3k` microorganisms are identified.
    * **Create** Interactive Dashboards using `Plotly.js`, including _Pie chart_, _Guage plot_, and _Bubble plot_.
    * Each selection correspond to the data of a different individual, **retrieve** data from `SQLite database`, **Update** visualization base on use's selection
-   * **Deploy** interactive dashboard on Heroku
+   * [**Deploy** interactive dashboard on Heroku](https://belly-button-biodiversity-ply.herokuapp.com) 
