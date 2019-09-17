@@ -1,5 +1,7 @@
-# Data Science Certificate Projects
-Homework and Project works, working towards a certificate  
+# Data Analysis and Advanced Data Visualization
+
+Practice Practice Practice (makes perfect).. 
+
 * [**VBA & Excel**](https://github.com/EstellaYu/Data_Science_Certificate_Projects#vba--excel)  
 | Pivot Table | VBA Macro |  
 
