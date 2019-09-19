@@ -8,19 +8,13 @@ Welcome to the United States Geological Survey, or USGS for short! The USGS is r
 
 In this work, a new set of tools will be built to visualize the earthquake data in the past week(with update every 5 min!). 
 
-### Before You Begin
-
 ## The Task
 
 ### 1. Basic Visualization
 
-![2-BasicMap](Images/2-BasicMap.png)
-
 Let's try to visualize an earthquake data set first.
 
 1. **Get the data set**
-
-   ![3-Data](Images/3-Data.png)
 
    The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page for more info. 
 
