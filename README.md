@@ -83,7 +83,7 @@ Practice Practice Practice (makes perfect)..
    * Create interactive filter result by constraining `Datetime`, `Country`, `State`, `City` and `Shape`    
 
 ## Interactive Web Visualization
-| Flask | Javascript | Plotly.js | D3.js | Heroku
+| Flask | Javascript | Plotly.js | D3.js | Heroku | Leaflet
 1. [**Flask, Plotly.js, and Heroku** -- Interactive Web Dashboard](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Interactive-web-Dashboard)
    * Analyze `Belly Button Biodiversity data` from 135 individuals, where over `~3k` microorganisms are identified.
    * **Create** Interactive Dashboards using `Plotly.js`, including _Pie chart_, _Guage plot_, and _Bubble plot_.
