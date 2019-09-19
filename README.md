@@ -15,7 +15,7 @@ Practice Practice Practice (makes perfect)..
 | HTML | CSS | Bootstrap | Webscraping | Splinter | Flask | MongoDb | Javascript
 
 * [**Interactive Web Visualization**](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/README.md#interactive-web-visualization)  
-| Javascript | Plotly.js | D3.js | Flask | Heroku | 
+| Javascript | Plotly.js | D3.js | Flask | Heroku | Leaflet
 
 ## VBA & Excel
 | Pivot Table | VBA Macro |
@@ -84,8 +84,19 @@ Practice Practice Practice (makes perfect)..
 
 ## Interactive Web Visualization
 | Flask | Javascript | Plotly.js | D3.js | Heroku
-1. [**Flask, Plotly.js, and Heroku** -- Interactive Web Dashboard](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Interactive-web-Dashboard) :  
+1. [**Flask, Plotly.js, and Heroku** -- Interactive Web Dashboard](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Interactive-web-Dashboard)
    * Analyze `Belly Button Biodiversity data` from 135 individuals, where over `~3k` microorganisms are identified.
    * **Create** Interactive Dashboards using `Plotly.js`, including _Pie chart_, _Guage plot_, and _Bubble plot_.
    * Each selection correspond to the data of a different individual, **retrieve** data from `SQLite database`, **Update** visualization base on use's selection
    * [**Deploy** interactive dashboard on Heroku](https://belly-button-biodiversity-ply.herokuapp.com) 
+   
+2. [**D3.js** -- US Health Index](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Interactive_Data_Journalism-D3)
+   * **Create** interactive bubble plot visualization with `switchable axes`
+   * Each x-axis and y-axis can be **clicked independantly**, and the data points are displayed coordingly, with smooth **transition effects** on the `data point`, `state abbreviation`, and `axis range display`
+   * **Create** interactive tooltip on each data point, with transition effects during `mouse over` and `mouse out` events
+   * [**Deploy** interactive dashboard on page](https://estellayu.github.io/Image/Projects/D3_interactive_vis/index.html) 
+
+3. [**Leaflet** -- World Earthquake GeoJSON Visualization](https://github.com/EstellaYu/Data_Science_Certificate_Projects/tree/master/Geomapping)
+   * **Query** `live world earthquake` data and `tectonic plate boundary` data in `.geijson` format
+   * **Create** interactive Geomapping visualization, with swithable baseMaps, and independent controllable overlayMaps
+   * [**Deploy** interactive dashboard on page](https://estellayu.github.io/Image/Projects/geomapping/index.html) 
