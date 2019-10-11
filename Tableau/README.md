@@ -1,11 +1,10 @@
 # Tableau - Citi Bike Analytics
 
-### CITIBIKE, CITILIFE
+### CITIBIKE, CITILIFE -- [Explore on Tableau Public](https://public.tableau.com/profile/estella.yu#!/vizhome/CitiBikeCitilife/CitibikeCitylife?publish=yes)
+
+![Citi-Bikes](https://github.com/EstellaYu/Data_Science_Certificate_Projects/blob/master/Tableau/citibike.gif)
 
 ## About citibike and data source
-
-![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
-
 [Citibike](https://en.wikipedia.org/wiki/Citi_Bike) is a privately owned public bicycle sharing system serving the New York City boroughs of Manhattan, Queens, and Brooklyn, as well as Jersey City, New Jersey. Named after lead sponsor Citigroup.Since established in May 2013, Citi Bike rapidly gain popularity in NYC due to its convenience. Up to date, Citibike as over `840+ stations`, `14,000+ bikes`, `380,000+ annual subscribers`, `4,000,000+ share rides` (in Aug 2019 alone!). 
 
 #### Data Source: 
